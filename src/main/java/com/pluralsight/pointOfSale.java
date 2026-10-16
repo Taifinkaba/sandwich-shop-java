@@ -15,13 +15,14 @@ public class pointOfSale {
         String input = myScanner.nextLine();
         int sizeNumber = Integer.parseInt(input);
 
+        // user can enter age type
         System.out.println("What is your age range?");
         System.out.println("Student (17 years old or younger)");
         System.out.println("Seniors (65 years old or older)");
         System.out.println("Neither");
 
         // need to make case-sensitive
-        String userAge = myScanner.nextLine();
+        String userAge = myScanner.nextLine().toLowerCase();
 
 
         myScanner.close();
