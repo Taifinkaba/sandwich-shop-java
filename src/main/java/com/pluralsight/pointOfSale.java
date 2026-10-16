@@ -24,7 +24,28 @@ public class pointOfSale {
         // need to make case-sensitive
         String userAge = myScanner.nextLine().toLowerCase();
 
-        System.out.printf("TOTAL: %d%n", sizeNumber);
+        double totalCost = 0;
+        if (sizeNumber == 1){
+            if(userAge.equals("student")){
+                totalCost = 5.45 * 0.90;
+            }else if(userAge.equals("senior")){
+                totalCost = 5.45 * 0.80;
+            }else{
+                totalCost = 5.45;
+            }
+        }else if (sizeNumber == 2){
+            if(userAge.equals("student")){
+                totalCost = 8.95 * 0.90;
+            }else if(userAge.equals("senior")){
+                totalCost = 8.95 * 0.80;
+            }else{
+                totalCost = 8.95;
+            }
+        }else{
+            System.out.println("Invalid size, try again!");
+        }
+
+        System.out.printf("TOTAL: %.2f%n", totalCost);
 
         myScanner.close();
     }
