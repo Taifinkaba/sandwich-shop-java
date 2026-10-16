@@ -18,13 +18,17 @@ public class pointOfSale {
         // user can enter age type
         System.out.println("What is your age range?");
         System.out.println("Student (17 years old or younger)");
-        System.out.println("Seniors (65 years old or older)");
+        System.out.println("Senior (65 years old or older)");
         System.out.println("Neither");
 
-        // need to make case-sensitive
+        // case-insensitive
         String userAge = myScanner.nextLine().toLowerCase();
 
+        // get the total cost
         double totalCost = 0;
+
+        // the size picked decides which option the statment goes to
+        // can use switch case instead
         if (sizeNumber == 1){
             if(userAge.equals("student")){
                 totalCost = 5.45 * 0.90;
