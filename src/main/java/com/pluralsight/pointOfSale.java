@@ -24,6 +24,7 @@ public class pointOfSale {
         // need to make case-sensitive
         String userAge = myScanner.nextLine().toLowerCase();
 
+        System.out.printf("TOTAL: %d%n", sizeNumber);
 
         myScanner.close();
     }
