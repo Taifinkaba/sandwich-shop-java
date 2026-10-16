@@ -54,7 +54,7 @@ public class pointOfSale {
         // get the total cost
         double totalCost = 0;
 
-        // the size picked decides which option the statment goes to
+        // the size picked decides which option the statement goes to
         // can use switch case instead
         if (sizeNumber == 1){
             if(userAge.equals("student")){
